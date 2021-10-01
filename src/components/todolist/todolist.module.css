@@ -1,0 +1,35 @@
+.listContainer{
+    text-align: center;
+}
+.emptyDiv{
+    text-align: center;
+}
+.todoContainer li {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
+}
+.todoContainer li span{
+    display: flex;
+    margin: auto 3px;
+    font-weight: 600;
+}
+
+
+.completed{
+    background-color: #C8E6C9;
+    text-decoration: line-through;
+}
+.notCompleted{
+    background-color: #FFCDD2;
+
+}
+.button{
+    background-color: transparent;
+    padding: 0;
+}
+.button svg{
+    font-size: 18px;
+    vertical-align: middle;
+}
+.button svg:hover{
+    color: tomato;
+}
