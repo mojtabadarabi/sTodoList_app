@@ -42,6 +42,32 @@ li{
     display: flex;
     justify-content: space-between;
     padding: 8px 10px;
-    margin: 8px auto;
+    margin: 10px auto;
     border-radius: 8px;
 }
+.tasklist-container{
+    width: 50rem;
+    text-align: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #cfcfcf; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #bdbcbc; 
+  }

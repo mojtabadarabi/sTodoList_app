@@ -1,5 +1,9 @@
 .listContainer{
     text-align: center;
+    width: 100%;
+    height: 60vh;
+    overflow-y: auto;
+    padding: 10px;
 }
 .emptyDiv{
     text-align: center;
@@ -12,11 +16,43 @@
     margin: auto 3px;
     font-weight: 600;
 }
+.todoContainer li div{
+    display: flex;
+    
+}
+.editContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #2f2f2f;
+    opacity: .2;
+    top: 0;
+    right: 0;
+    border-radius: 8px;
+    padding: 8px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+.editForm{
+    position: absolute;
+    opacity: 1;
+    width: 500px;
+    height: 250px;
+    background-color: #fff;
+    margin: auto;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); 
+    border-radius: 8px;
+    padding: 8px;
+z-index: 1;
+}
+.messageContainer{
+    display: contents;
+}
 
 
 .completed{
     background-color: #C8E6C9;
-    text-decoration: line-through;
 }
 .notCompleted{
     background-color: #FFCDD2;
@@ -32,4 +68,26 @@
 }
 .button svg:hover{
     color: tomato;
+}
+.createdTime{
+    opacity: .6;
+    font-weight: 300;
+}
+
+.editForm {
+    width: 50rem;
+    display: flex;
+    height: unset;
+    top: 30%;
+}
+.editForm button{
+    width: 20%;
+}
+.editForm input{
+    border: 1px solid transparent;
+    background-color: #f2f2f2;
+    width: 80%;
+}
+.editForm input:focus{
+    border: 1px solid black;
 }

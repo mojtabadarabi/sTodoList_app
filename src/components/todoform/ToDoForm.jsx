@@ -21,8 +21,8 @@ function ToDoForm({newToDoHandler}) {
 
     return (
         <form onSubmit={(e)=>submitNewToDoHandler(e)} className={style.form}>
-            <input type="text" placeholder='کار' value={todo} onChange={(e)=>settodo(e.target.value)} />
-            <button type='submit'>ثبت</button>
+            <input className={style.newTaskTxt} type="text" placeholder='کار' value={todo} onChange={(e)=>settodo(e.target.value)} />
+            <button className={style.newTaskBtn} type='submit'>ثبت</button>
         </form>
     )
 }

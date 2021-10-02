@@ -1,5 +1,5 @@
 .form{
-    padding: 8px;
+    padding: 8px 0;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -7,16 +7,15 @@
 }
 
 .form input{
-    background-color: #EE6B61 !important;
-    color: #fff;
-}
-.form input::placeholder{
-    color: #fff;
-}
-.form input:focus{
     background-color: transparent !important;
     border: 2px solid #EE6B61;
     color: black;
+    width: 80%;
+    margin: auto 0;
+}
+
+.form input:focus{
+    border: 2px solid black;
 }
 .form input:focus::placeholder{
     color: black;
@@ -25,14 +24,14 @@
     background-color: #EE6B61;
     color: #fff;
     border: 2px solid transparent;
-
+    width: 20%;
+    margin: auto 0;
+    margin-right: 8px;
 
     
 }
 .form button:hover{
-    border: 2px solid #EE6B61;
-    color: black;
-    background-color: transparent;
+    background-color: #ff5448;
 
     
 }
